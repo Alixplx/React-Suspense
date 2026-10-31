@@ -1,0 +1,176 @@
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+.app {
+    max-width: 900px;
+    width: 92%;
+    margin: 40px auto;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 8%);
+}
+
+.header {
+    padding: 28px;
+    text-align: center;
+    background: #1e40af;
+    color: white;
+}
+
+.header h1 {
+
+    margin: 0 0 10px;
+}
+
+.header p {
+
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.navigation button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #e5e7eb;
+    color: #1f2937;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.navigation button:hover {
+
+    background: #d1d5db;
+}
+
+.navigation button.active {
+    background: #2563eb;
+    color: white;
+}
+
+.content {
+    min-height: 300px;
+    padding: 28px;
+}
+
+.page h2 {
+
+    margin-top: 0;
+}
+
+.page > p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.info-card, .stat-card {
+
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+}
+
+.info-card {
+
+    margin-top: 24px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin-top: 24px;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat-card span {
+
+    color: #6b7280;
+}
+
+.stat-card strong {
+
+    font-size: 24px;
+}
+
+.setting-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 250px;
+}
+
+.loading p {
+
+    color: #6b7280;
+}
+
+.spinner {
+    width: 36px;
+    height: 36px;
+    border: 4px solid #dbeafe;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+  
+@keyframes spin {
+
+    to {
+      
+        transform: rotate(360deg);
+    }
+}
+  
+.footer {
+    padding: 18px;
+    text-align: center;
+    background: #f9fafb;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+}
+  
+@media (max-width: 600px) {
+
+    .stats-grid {
+      
+        grid-template-columns: 1fr;
+    }
+  
+    .content {
+      
+        padding: 18px;
+    }
+}

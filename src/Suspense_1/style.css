@@ -1,0 +1,98 @@
+* {
+    
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+}
+  
+.app {
+    width: min(600px, 92%);
+    margin: 60px auto;
+    text-align: center;
+}
+  
+.app h1 {
+    margin-bottom: 10px;
+}
+  
+.description {
+    color: #6b7280;
+    margin-bottom: 24px;
+}
+  
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background: #1d4ed8;
+}
+  
+.loading-card, .profile-card {
+    margin-top: 28px;
+    padding: 28px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 8%);
+}
+  
+.loading-card p {
+    color: #6b7280;
+}
+  
+.spinner {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 4px solid #dbeafe;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+  
+@keyframes spin {
+
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 30px;
+    font-weight: bold;
+}
+  
+.role {
+    color: #6b7280;
+}
+  
+.profile-details {
+    margin-top: 24px;
+    text-align: left;
+    line-height: 1.8;
+}
+  
+.profile-status {
+    margin-top: 20px;
+    color: #15803d;
+    font-weight: bold;
+}
